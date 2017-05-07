@@ -1,0 +1,138 @@
+body {
+  max-width: 100%
+  font-size: 16px;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  color: #2d2d2d;
+}
+
+/* TODO: size images manually so this is not necessary */
+img {
+  max-width: 100%;
+}
+
+
+/***************** NAV *****************/
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .row {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #4C7EC9;
+  color: white;
+
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+nav .row a {
+  color: white;
+}
+
+/**************** HERO *****************/
+
+header {
+  margin-bottom: 1rem;
+}
+
+header img {
+  max-width: 100%;
+  padding-left: 1rem;
+  float: left;
+}
+
+header h1 {
+  font-family: Impact, Charcoal, sans-serif;
+  line-height: 1rem;
+  font-size: 3rem;
+  color: #4C7EC9
+}
+
+h1 .logo-w {
+  font-size: 4rem;
+}
+
+/**************** ASIDE ****************/
+
+.mailing-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  margin-left: auto;
+  margin right: auto;
+}
+
+.mailing-list label {
+  padding-top: 2rem;
+}
+
+input[type="email"] {
+  display: block;
+  width: 99%;
+  margin: .5rem auto;
+}
+
+input[type="submit"] {
+  padding: .7rem;
+  margin: .25rem;
+  background-color: #3D7FCF;
+  border: 1px solid #3D7FCF;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+}
+
+/*********** PRODUCTS SECTION ***********/
+
+.item {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: 0;
+}
+
+h2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+h3 {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+footer.snow-footer {
+  background-color: blue;
+  background-image: url("http://clipartall.com/subimg/snow-landscape-clipart-snow-background-clipart-1024_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
