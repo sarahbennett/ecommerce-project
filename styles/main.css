@@ -128,11 +128,3 @@ h3 {
   text-align: center;
   color: #2d2d2d;
 }
-
-footer.snow-footer {
-  background-color: blue;
-  background-image: url("http://clipartall.com/subimg/snow-landscape-clipart-snow-background-clipart-1024_720.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 1rem;
-}
