@@ -3,8 +3,10 @@
 <head>
   <title>Winter Scarves</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -14,6 +16,7 @@
 
 <body>
   <script type="text/javascript" src="js/form-handler.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
   <header>
     <nav class="container">
       <div class="row">
@@ -71,10 +74,20 @@
                     sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                     src="reversible-plaid-400w.jpg"
                     alt="reversible plaid scarf">
-                  <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
-                  <p>26.99</p>
+
+                  <div class="details">
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Reversible Plaid" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Reversible Plaid" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsRP">See Details</button>
+                    <div id="collapseDetailsRP" class="collapse">
+                      <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
+                      <p>26.99</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="item">
@@ -83,10 +96,20 @@
                     sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                     src="fringed-plaid-400w.jpg"
                     alt="fringed plaid scarf">
-                    <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
-                    <p>18.99</p>
+                  <div class="details">
+
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Fringed Plaid" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Fringed Plaid" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsFP">See Details</button>
+                    <div id="collapseDetailsFP" class="collapse">
+                      <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+                      <p>18.99</p>
+                    </div>
                   </div>
                 </div>
+              </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="item">
@@ -95,8 +118,18 @@
                   sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                   src="multi-color-400w.jpg"
                   alt="multi color scarf">
-                  <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
-                  <p>22.99</p>
+                  <div class="details">
+
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Multi Color" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Multi Color" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsMC">See Details</button>
+                    <div id="collapseDetailsMC" class="collapse">
+                      <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
+                      <p>22.99</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -107,21 +140,40 @@
                   sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                   src="northern-lights-400w.jpg"
                   alt="northern lights scarf">
-                  <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
-                  <p>29.99</p>
+                  <div class="details">
+
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Northern Lights" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Northern Lights" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsNL">See Details</button>
+                    <div id="collapseDetailsNL" class="collapse">
+                      <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
+                      <p>29.99</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="item">
-                <h3>Multi Color</h3>
                 <h3>Ombre Infinity</h3>
                 <img srcset="images/ombre-infinity-400w.jpg 400w, images/ombre-infinity-250w.jpg 250w"
                   sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                   src="ombre-infinity-400w.jpg"
                   alt="ombre infinity scarf">
-                  <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
-                  <p>11.99</p>
+                  <div class="details">
+
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Ombre Infinity" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Ombre Infinity" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsOI">See Details</button>
+                    <div id="collapseDetailsOI" class="collapse">
+                      <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
+                      <p>11.99</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -132,8 +184,18 @@
                   sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                   src="twill-400w.jpg"
                   alt="ashby twill scarf">
-                  <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
-                  <p>70.99</p>
+                  <div class="details">
+
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Ashby Twill" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Ashby Twill" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsAT">See Details</button>
+                    <div id="collapseDetailsAT" class="collapse">
+                      <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
+                      <p>70.99</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -144,8 +206,18 @@
                   sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                   src="wool-cable-400w.jpg"
                   alt="wool cable knit scarf">
-                  <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
-                  <p>49.99</p>
+                  <div class="details">
+
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Wool Cable Knit" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Wool Cable Knit" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsWCK">See Details</button>
+                    <div id="collapseDetailsWCK" class="collapse">
+                      <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
+                      <p>49.99</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -156,8 +228,18 @@
                   sizes="(max-width: 991px) 250px, (max-width: 1199px) 400px, (min-width: 1200px) 400px"
                   src="etro-400w.jpg"
                   alt="etro paisley print silk scarf">
-                  <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
-                  <p>26.99</p>
+                  <div class="details">
+
+                    <div class="cart-add-remove">
+                      <input id="addButton" type="button" name="Etro Paisley-Print Silk" value="+" onclick="addToCart()">
+                      <input id="removeButton" type="button" name="Etro Paisley-Print Silk" value="-" onclick="removeFromCart()">
+                    </div>
+                    <button class="btn btn-info" data-toggle="collapse" data-target="#collapseDetailsEPPS">See Details</button>
+                    <div id="collapseDetailsEPPS" class="collapse">
+                      <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
+                      <p>26.99</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 

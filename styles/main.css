@@ -128,3 +128,20 @@ h3 {
   text-align: center;
   color: #2d2d2d;
 }
+
+.details {
+  margin: 1rem;
+}
+
+.details button {
+  background-color: #4C7EC9;
+  border-color: #2d2d2d;
+}
+
+.cart-add-remove {
+  display: inline-block;
+  float: right;
+  font-size: 1.5rem;
+  color: #2d2d2d;
+
+}
