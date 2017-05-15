@@ -53,50 +53,16 @@ cart = [];
 
 function addToCart(itemToAdd) {
   event.preventDefault();
-  var itemToAdd = document.getElementById("addButton").name;
-  alert("Congrats! The " + itemToAdd + " scarf has been added to your cart.");
-
-  if (itemToAdd === products[0].name) {
-    cart.push(products[0].name + ", " + products[0].price);
-  } else if (itemToAdd === products[1].name) {
-    cart.push(products[1].name + ", " + products[1].price);
-  } else if (itemToAdd === products[2].name) {
-    cart.push(products[2].name + ", " + products[2].price);
-  } else if (itemToAdd === products[3].name) {
-    cart.push(products[3].name + ", " + products[3].price);
-  } else if (itemToAdd === products[4].name) {
-    cart.push(products[4].name + ", " + products[4].price);
-  } else if (itemToAdd === products[5].name) {
-    cart.push(products[5].name + ", " + products[5].price);
-  } else if (itemToAdd === products[6].name) {
-    cart.push(products[6].name + ", " + products[6].price);
-  } else if (itemToAdd === products[7].name) {
-    cart.push(products[7].name + ", " + products[7].price);
-  }
-  console.log("Your cart now has " + cart.length + " amazing scarves in it!");
-};
+  var itemToAdd = document.getElementsByTagName("input")[1].getAttribute("name");
+  alert("Congrats! This scarf has been added to your cart.");
+  cart.push(itemToAdd);
+  console.log(cart.length);
+}
 
 function removeFromCart(itemToRemove) {
   event.preventDefault();
-  var itemToRemove = document.getElementById("removeButton").name;
-  alert("You are removing the " + itemToRemove + " scarf from your cart.");
-
-  if (itemToRemove === products[0].name) {
-    cart.pop(products[0].name + ", " + products[0].price);
-  } else if (itemToRemove === products[1].name) {
-    cart.pop(products[1].name + ", " + products[1].price);
-  } else if (itemToRemove === products[2].name) {
-    cart.pop(products[2].name + ", " + products[2].price);
-  } else if (itemToRemove === products[3].name) {
-    cart.pop(products[3].name + ", " + products[3].price);
-  } else if (itemToRemove === products[4].name) {
-    cart.pop(products[4].name + ", " + products[4].price);
-  } else if (itemToRemove === products[5].name) {
-    cart.pop(products[5].name + ", " + products[5].price);
-  } else if (itemToRemove === products[6].name) {
-    cart.pop(products[6].name + ", " + products[6].price);
-  } else if (itemToRemove === products[7].name) {
-    cart.pop(products[7].name + ", " + products[7].price);
-  }
-  console.log("You have removed the " + itemToRemove + " from your cart. Now you have " + cart.length + " amazing scarves in your cart!");
-};
+  var itemToRemove = document.getElementsByTagName("input")[1].getAttribute("name");
+  alert("This scarf has now been removed from your cart.");
+  cart.pop(itemToRemove);
+  console.log(cart.length);
+}

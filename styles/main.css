@@ -10,11 +10,9 @@ p {
   color: #2d2d2d;
 }
 
-/* TODO: size images manually so this is not necessary */
 img {
   max-width: 100%;
 }
-
 
 /***************** NAV *****************/
 
@@ -99,6 +97,7 @@ input[type="submit"] {
 
 .item {
   border: 1px solid black;
+  border-radius: .3rem;
   padding: 1rem;
   margin-bottom: 1rem;
   display: inline-block;
@@ -143,5 +142,41 @@ h3 {
   float: right;
   font-size: 1.5rem;
   color: #2d2d2d;
+}
 
+/*********** FOOTER ***********/
+
+.footbg {
+  min-height: 15rem;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white, #3c64a0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #3c64a0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #3c64a0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #3c64a0); /* Standard syntax */
+}
+
+/*********** MEDIA QUERIES ***********/
+
+@media (max-width: 768px) {
+body {
+  font-size: 2rem;
+}
+
+header {
+  min-width: 100%;
+}
+
+nav a{
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+.item {
+  min-width: 100%;
 }
